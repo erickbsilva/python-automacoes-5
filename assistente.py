@@ -4,7 +4,7 @@ import speech_recognition as sr
 import sys
 import funcoes_so
 import funcoes_noticias
-import funcoes_moeda
+import funcoes_moedas
 import os
 
 
@@ -47,6 +47,12 @@ def executa_comandos(acao):
         funcoes_so.cancela_desligamento()
     elif "notícias" in acao:
         cria_audio("mensagem.mp3", funcoes_noticias.ultima_noticias())
+    elif "cotação" in acao and "dólar" in acao:
+        cria_audio("mensagem.mp3", funcoes_moeda.cotacao_moeda("Dólar"))
+    elif "cotação" in acao and "euro" in acao:
+        cria_audio("mensagem.mp3", funcoes_moeda.cotacao_moeda("Euro"))
+    elif "cotação" in acao and "bitcoin" in acao:
+        cria_audio("mensagem.mp3", funcoes_moeda.cotacao_moeda("Bitcoin"))
 
 
 def main():
