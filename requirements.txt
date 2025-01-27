@@ -1,16 +1,19 @@
 # requirements.txt
 
+beautifulsoup4==4.12.3
 certifi==2024.12.14
 charset-normalizer==3.4.1
 click==8.1.8
 gTTS==2.5.4
 idna==3.10
 playsound==1.2.2
+PyAudio==0.2.14
 pycairo==1.27.0
 PyGObject==3.50.0
 pyttsx3==2.98
 requests==2.32.3
 setuptools==75.8.0
+soupsieve==2.6
 SpeechRecognition==3.14.1
 typing_extensions==4.12.2
 urllib3==2.3.0
