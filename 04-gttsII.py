@@ -1,3 +1,7 @@
+from gtts import gTTS
+from playsound import playsound
+
+
 # 1 - Função para criar audio
 def cria_audio(mensagem):
     tts = gTTS(mensagem, lang="pt-br")
@@ -9,7 +13,7 @@ def cria_audio(mensagem):
 # cria_audio("Aprendendo a linguagem Python para desenvolver Automação")
 
 # 3 - Utilização da função via Input
-# frase = input("Digite a frase a ser falada\\n")
+# frase = input("Digite a frase a ser falada\n")
 # cria_audio(frase)
 
 # 4 - Utilização da função via leitura de arquivo
