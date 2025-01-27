@@ -45,6 +45,8 @@ def executa_comandos(acao):
         funcoes_so.desliga_computador_meia_hora()
     elif "cancelar desligamento" in acao:
         funcoes_so.cancela_desligamento()
+    elif "notícias" in acao:
+        cria_audio("mensagem.mp3", funcoes_noticias.ultima_noticias())
 
 
 def main():
